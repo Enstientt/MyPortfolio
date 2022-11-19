@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/enstientt.github.io/MyPortfolio/static/js/main.5d9209d1.js",
-    "index.html": "/enstientt.github.io/MyPortfolio/index.html",
-    "main.5d9209d1.js.map": "/enstientt.github.io/MyPortfolio/static/js/main.5d9209d1.js.map"
+    "main.js": "/MyPortfolio/static/js/main.a9686ed9.js",
+    "index.html": "/MyPortfolio/index.html",
+    "main.a9686ed9.js.map": "/MyPortfolio/static/js/main.a9686ed9.js.map"
   },
   "entrypoints": [
-    "static/js/main.5d9209d1.js"
+    "static/js/main.a9686ed9.js"
   ]
 }
