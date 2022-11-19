@@ -8,10 +8,10 @@ export const Header=(props)=>{
         
         <MainHeader >
             <HeaderD>
-                <Button value={theme.theme} to="/"><b>Home</b></Button>
-                <Button value={theme.theme} to="/AbouteMe"><b>About</b></Button>
-                <Button value={theme.theme} to="/MyResume" ><b>Resume</b></Button>
-                <Button value={theme.theme} to="/MyIntranet"><b>Profil</b></Button>
+                <Button value={theme.theme} to="MyPortfolio/"><b>Home</b></Button>
+                <Button value={theme.theme} to="MyPortfolio/AbouteMe"><b>About</b></Button>
+                <Button value={theme.theme} to="MyPortfolio/MyResume" ><b>Resume</b></Button>
+                <Button value={theme.theme} to="MyPortfolio/MyIntranet"><b>Profil</b></Button>
                 <ButtonSwitch value={theme.theme} onClick={()=>theme.switchTheme()}/>
                 <ButtonSwitchLight value={theme.theme} onClick={()=>theme.switchTheme()}/>
 
