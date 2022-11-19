@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "./data";
 
 import { ImageContainer , Image, Arrow, ArrowRight, DoteCont, Dote,Slidediv, TextContainer, Title, Text} from "./ImageSlider.styled";
+import { H1Welcome } from "./Welcome.styled";
 
 export const ImageSlider=({slides})=>{
     const [index, setIndex] = useState(5);
@@ -61,7 +62,8 @@ export const ImageSlider=({slides})=>{
         }
       };
     return(
-        <div >
+        <div style={{width:"100%", display:"flex",flexFlow:"row wrap", justifyContent:"center"}} >
+        <H1Welcome theme = {theme.theme} style={{fontSize:"45px", width:"100%", textAlign:"center",borderBottom:"1px solid white",display:"flex", justifyContent:"center"}}>Projects</H1Welcome>
         <ImageContainer value={theme.theme}>
         {
             slides.map((slide,slideIndex)=>{

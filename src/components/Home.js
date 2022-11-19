@@ -12,7 +12,6 @@ const  Home=()=>{
     return(
         <ContainerHome>
         <Welcome />
-        <H1Welcome theme = {theme.theme} style={{fontSize:"45px", width:"100%", textAlign:"center",borderBottom:"1px solid white",display:"flex", justifyContent:"center"}}>Projects</H1Welcome>
         <ImageSlider id="content2" slides ={slides} />
         <Education />
         </ContainerHome>

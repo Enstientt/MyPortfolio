@@ -12,7 +12,7 @@ return (
         <Button value={theme.theme} to="/AbouteMe"><b>About</b></Button>
         <Button value={theme.theme} to="/MyResume" ><b>Resume</b></Button>
         <Button value={theme.theme} to="/MyIntranet"><b>Profil </b></Button>
-		<p1 style={{color:"white"}}> © 2022 zakariae essadqui </p1>
+		<p style={{color:"white"}}> © 2022 zakariae essadqui </p>
 	</FooterContainer>
 )
 };

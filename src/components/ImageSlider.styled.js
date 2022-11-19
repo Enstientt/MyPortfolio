@@ -128,6 +128,6 @@ align-items: center;
 row-gap: 2rem;
 @media screen and (max-width :500px ) {
     width: 100%;
-    row-gap: 3rem;
+    row-gap: 1rem;
 }
 `

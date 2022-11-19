@@ -1,6 +1,6 @@
 {
-  "name": "portfolio",
-  "homepage": "enstientt.github.io/portfolio",
+  "name": "MyPortfolio",
+  "homepage": "enstientt.github.io/MyPortfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
