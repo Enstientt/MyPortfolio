@@ -58,16 +58,21 @@ export const ImageSlider=({slides})=>{
         <ImageContainer onTouchStart={(e)=>handleTouchStart(e)} onTouchMove={(e)=>(handleTouchMove(e))} value={textdesplay} src={slides[index].url}>
         {
             slides.map((slide,slideIndex)=>{
-                return (
-                    <div key={slideIndex} >
-                    {slideIndex===index && (
+                if (index!==slideIndex)
+                {
+                    return undefined;
+                }
+                else {
+
+                    return (
+                        <div key={slideIndex} >
                         <TextContainer value={textdesplay} onMouseEnter={onHover} onMouseLeave={onHover}>
                         <Title value={theme.theme} text={textdesplay} >{slides[slideIndex].name}</Title>
                         <Text value={theme.theme} text={textdesplay} >{slides[slideIndex].description}</Text>
                         </TextContainer>
-                        )}
-                    </div>
+                        </div>
                         );
+                    }
                     } )
                     
                 }

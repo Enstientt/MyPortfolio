@@ -81,10 +81,11 @@ cursor: pointer;
  transition: 1s ease;
  `
 export const TextContainer = styled.div`
-width: 80vw;
-height: 10vh;
+width: 80%;
+height: fit-content;
 position: relative;
 left: 50%;
+top:0%;
 transform: translateX(-50%);
 @media screen and (max-width :500px ) {
 }
