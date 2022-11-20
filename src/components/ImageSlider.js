@@ -5,7 +5,7 @@ import { ImageContainer , Image, Arrow, ArrowRight, DoteCont, Dote,Slidediv, Tex
 import { H1Welcome } from "./Welcome.styled";
 
 export const ImageSlider=({slides})=>{
-    const [index, setIndex] = useState(5);
+    const [index, setIndex] = useState(0);
     const [textdesplay, setTextdesplay] = useState(false);
     const theme = useContext(ThemeContext);
     const [dotshow, setdotshow] = useState(true);
@@ -63,7 +63,7 @@ export const ImageSlider=({slides})=>{
       };
     return(
         <div style={{width:"100%", display:"flex",flexFlow:"row wrap", justifyContent:"center"}} >
-        <H1Welcome theme = {theme.theme} style={{fontSize:"45px", width:"100%", textAlign:"center",borderBottom:"1px solid white",display:"flex", justifyContent:"center"}}>Projects</H1Welcome>
+        <H1Welcome theme = {theme.theme} style={{fontSize:"45px", width:"100%", textAlign:"center",borderBottom:"1px solid "+theme.theme.text,display:"flex", justifyContent:"center"}}>Projects</H1Welcome>
         <ImageContainer value={theme.theme}>
         {
             slides.map((slide,slideIndex)=>{

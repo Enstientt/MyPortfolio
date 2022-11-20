@@ -8,7 +8,7 @@ export const Education =()=>{
 
     return(
         <Econtainer>
-            <H1Welcome theme={theme.theme} style={{fontSize:"45px",width:"100%",display:"flex",justifyContent:"center",borderBottom:"1px solid white"}}>Education</H1Welcome>
+            <H1Welcome theme={theme.theme} style={{fontSize:"45px",width:"100%",display:"flex",justifyContent:"center",borderBottom:"1px solid "+theme.theme.text}}>Education</H1Welcome>
             <InfoContainer>
             {parcour.map((element)=>{
                 return(

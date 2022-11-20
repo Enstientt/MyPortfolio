@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const FooterContainer = styled.div`
 width: 100%;
 height:10vh;
-border: 0.1px solid black;
+border: 0.1px solid ${props=>props.theme.text};
 display: flex;
 flex-wrap: wrap;
 flex-direction: row-reverse;
@@ -18,7 +18,7 @@ border-bottom:none;
 export const P1= styled.p`
 margin-top: 0;
 height: 100%;
-color: black;
+color:black;
 flex: 1 1 160px;
 text-align: center;
 opacity: 0;

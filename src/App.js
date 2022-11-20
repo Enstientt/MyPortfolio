@@ -23,7 +23,7 @@ const App =()=>{
     <Global value={windowTheme.theme}/>
     <Header />
     <Routes>
-    <Route path='MyPortfolio/' element={<Home />}/>
+    <Route path='/' element={<Home />}/>
     <Route path='MyPortfolio/AbouteMe' element={<AbouteMe />}/>
     <Route path='MyPortfolio/MyIntranet' element={<Intra42 />}/>
     <Route path='MyPortfolio/MyResume' element={<MyResume />}/>
@@ -36,4 +36,3 @@ const App =()=>{
 }
   
   export default App;
-  
