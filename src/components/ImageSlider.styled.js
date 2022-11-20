@@ -86,7 +86,6 @@ height: 10vh;
 position: relative;
 left: 50%;
 transform: translateX(-50%);
-border: 1px solid white;
 @media screen and (max-width :500px ) {
 }
 `
