@@ -1,14 +1,13 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import { ThemeContext } from "./data";
 
-import { ImageContainer , Image, Arrow, ArrowRight, DoteCont, Dote,Slidediv, TextContainer, Title, Text} from "./ImageSlider.styled";
+import { ImageContainer, Arrow, ArrowRight, DoteCont, Dote, TextContainer, Title, Text, SlidCon} from "./ImageSlider.styled";
 import { H1Welcome } from "./Welcome.styled";
 
 export const ImageSlider=({slides})=>{
     const [index, setIndex] = useState(0);
     const [textdesplay, setTextdesplay] = useState(false);
     const theme = useContext(ThemeContext);
-    const [dotshow, setdotshow] = useState(true);
     const [touchPosition, setTouchPosition] = useState(null);
 
     const handleTouchStart = (e) => {
@@ -23,7 +22,6 @@ export const ImageSlider=({slides})=>{
         }
     
         const currentTouch = e.touches[0].clientX
-        console.log(currentTouch);
         const diff = touchDown - currentTouch
     
         if (diff > 5) {
@@ -52,44 +50,37 @@ export const ImageSlider=({slides})=>{
     const onHover = ()=>{
         setTextdesplay(!textdesplay);
     }
-    const detectSize = () => {
-        let intViewportWidth = window.innerWidth;
-        if (intViewportWidth >= 500) {
-          setdotshow(true);
-        }
-        if (intViewportWidth < 500) {
-          setdotshow(true);
-        }
-      };
     return(
-        <div style={{width:"100%", display:"flex",flexFlow:"row wrap", justifyContent:"center"}} >
+        <div style={{width:"100%", display:"flex",flexFlow:"row wrap", justifyContent:"center",overflow:"hidden"}} >
         <H1Welcome theme = {theme.theme} style={{fontSize:"45px", width:"100%", textAlign:"center",borderBottom:"1px solid "+theme.theme.text,display:"flex", justifyContent:"center"}}>Projects</H1Welcome>
-        <ImageContainer value={theme.theme}>
+        <SlidCon>
+        <Arrow onClick={goToPrevious} text={textdesplay} value={theme.theme}/>
+        <ImageContainer onTouchStart={(e)=>handleTouchStart(e)} onTouchMove={(e)=>(handleTouchMove(e))} value={textdesplay} src={slides[index].url}>
         {
             slides.map((slide,slideIndex)=>{
                 return (
-                    <Slidediv onTouchStart={(e)=>handleTouchStart(e)} onTouchMove={(e)=>(handleTouchMove(e))} key={slideIndex} value={slideIndex===index}>
-                    {slideIndex===index &&  <Image desplay={slideIndex===index} text={textdesplay} src={slides[slideIndex].url} alt={slides[slideIndex].name}  />}
+                    <div key={slideIndex} >
                     {slideIndex===index && (
-                        <TextContainer value={textdesplay}  onMouseEnter={onHover} onMouseLeave={onHover}>
-                            <Title value={theme.theme} text={textdesplay} >{slides[slideIndex].name}</Title>
-                            <Text value={theme.theme} text={textdesplay} >{slides[slideIndex].description}</Text>
+                        <TextContainer value={textdesplay} onMouseEnter={onHover} onMouseLeave={onHover}>
+                        <Title value={theme.theme} text={textdesplay} >{slides[slideIndex].name}</Title>
+                        <Text value={theme.theme} text={textdesplay} >{slides[slideIndex].description}</Text>
                         </TextContainer>
                         )}
-                    </Slidediv>
-                );
-            } )
-            
-        }
-        </ImageContainer>
-        <DoteCont>
-        {slides.map((slide,slideIndex)=>{
-            console.log(slideIndex===index);
-            return (
-            <Dote value={theme.theme} key = {slideIndex}  index ={index===slideIndex} onClick={()=>goToSlide(slideIndex)} />
-            )
-        })}
-            </DoteCont>
-        </div>
+                    </div>
+                        );
+                    } )
+                    
+                }
+                </ImageContainer>
+                <ArrowRight value={theme.theme} onClick={goToNext}/>
+                </SlidCon>
+                <DoteCont>
+                {slides.map((slide,slideIndex)=>{
+                    return (
+                        <Dote value={theme.theme} key = {slideIndex}  index ={index===slideIndex} onClick={()=>goToSlide(slideIndex)} />
+                        )
+                    })}
+                    </DoteCont>
+                    </div>
             );
         }

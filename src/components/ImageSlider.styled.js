@@ -2,31 +2,23 @@ import styled from "styled-components";
 import {VscChevronLeft, VscChevronRight,VscCircleOutline} from 'react-icons/vsc'
 
 export const ImageContainer = styled.div`
-height: fit-content;
-width:fit-content; ;
+height: 320px;
+width:90%; 
 display: flex;
-flex-flow: row wrap;
+flex-flow: column wrap;
 justify-content: center;
 align-items: center;
 border-radius: 5%;
 row-gap: 10px;
-opacity:${props=>props.value.background ==='dark'?'0.7':'1'};
+background-image: url(${props=>props.src});
+background-size: cover;
+background-position: center;
+${props=>props.value?'background:rgba(0,0,0,1);':1};
 overflow: hidden;
 @media screen and (max-width :500px ) {
     width: 100vw;
     height: 30vh;
     row-gap: 0px;
-}
-`;
-export const Image = styled.img`
-height:300px;
-width: 490px;
-border-radius: 0%;
-${props=>props.text?'opacity:0.1;':1};
-border-radius: 5%;
-@media screen and (max-width :500px ) {
-    width: 100%;
-    height: 30vh;
 }
 `;
 export const SlideContainer = styled.div`
@@ -42,18 +34,24 @@ border-top: 0.1px solid ${props=>props.value.text==='white'?'grey':'grey'};
 
 `
 export const Arrow = styled(VscChevronLeft)`
-transform: translate(-50%,-50%);
 font-size: 45px;
-z-index:1;
-color: ${(props)=> props.value.text};
+align-self: flex-start;
+position: absolute;
+color: ${props=>props.value.text};
 cursor: pointer;
+@media screen and (max-width :500px ) {
+    display: none;
+}
 `;
 export const ArrowRight = styled(VscChevronRight)`
-transform: translate(-50%,-50%);
 font-size: 45px;
-color: ${(props)=> props.value.text};
-z-index:1;
+color: ${props=>props.value.text};
+align-self: flex-end;
+position: absolute;
 cursor: pointer;
+@media screen and (max-width :500px ) {
+    display: none;
+}
 `;
  export const DoteCont = styled.div`
  display: ${props=>!props.display?'flex':'none'};
@@ -81,26 +79,22 @@ cursor: pointer;
  width: 100%;
  opacity: 0;
  transition: 1s ease;
- ${props=>props.value?'opacity:1;transition-duration:1s;transform:scale(1.08)':1};
  `
 export const TextContainer = styled.div`
-height: 80%;
-width: 70%;
-position: absolute;
-max-height: 70%;
-top:50%;
-left:50%;
-transform: translate(-50%,-50%);
+width: 80vw;
+height: 10vh;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+border: 1px solid white;
 @media screen and (max-width :500px ) {
-    height:fit-content;
-    width: fit-content;
 }
 `
 export const Title = styled.h1`
 text-align: center;
 color:${(props)=> props.value.text};
 font-family: 'Permanent Marker', cursive;
-${props=>props.text?'transform:scale(1.2); transition:all 1s ease-in-out;opacity:1':'opacity:0;'}
+${props=>props.text?'transform:scale(1.1); transition:all 1s ease-in-out;opacity:1':'opacity:0;'}
 @media screen and (max-width :500px ) {
     font-size: 5px !important;
 }
@@ -111,7 +105,7 @@ text-align: center;
 font-size: medium;
 color:${(props)=>props.value.text};
 font-family: 'Permanent Marker', cursive;
-${props=>props.text?'transform:scale(1.2); transition:all 1s ease-in-out;opacity:1':'opacity:0'};
+${props=>props.text===true?'transform:scale(1.1); transition:all 1s ease-in-out;opacity:1':'opacity:0'};
 text-rendering: optimizeSpeed;
 @media screen and (max-width :500px ) {
     font-size: 8px;
@@ -130,4 +124,13 @@ row-gap: 2rem;
     width: 100%;
     row-gap: 1rem;
 }
+`
+
+export const SlidCon=styled.div`
+width:100%;
+display:flex;
+flex-direction:column;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
 `
