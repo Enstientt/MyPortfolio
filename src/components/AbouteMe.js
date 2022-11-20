@@ -5,6 +5,8 @@ export const AbouteMe =()=>{
     const theme = useContext(ThemeContext);
     
     return (
-        <h1>AbouteMe</h1>
+        <div style={{width:"100%", height:"100%"}}>
+        <h1 style={{color:"white"}}>AbouteMe</h1>
+        </div>
         )
 }
