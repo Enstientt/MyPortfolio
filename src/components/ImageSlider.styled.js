@@ -13,7 +13,7 @@ row-gap: 10px;
 background-image: url(${props=>props.src});
 background-size: cover;
 background-position: center;
-${props=>props.value?'background:rgba(0,0,0,1);':1};
+${props=>(props.value && props.theme.text==='white')?'background:rgba(0,0,0,1);':(props.value && props.theme.body==='white')?'background:rgba(255,255,255,1)':1};
 overflow: hidden;
 @media screen and (max-width :500px ) {
     width: 100vw;

@@ -55,7 +55,13 @@ export const ImageSlider=({slides})=>{
         <H1Welcome theme = {theme.theme} style={{fontSize:"45px", width:"100%", textAlign:"center",borderBottom:"1px solid "+theme.theme.text,display:"flex", justifyContent:"center"}}>Projects</H1Welcome>
         <SlidCon>
         <Arrow onClick={goToPrevious} text={textdesplay} value={theme.theme}/>
-        <ImageContainer onTouchStart={(e)=>handleTouchStart(e)} onTouchMove={(e)=>(handleTouchMove(e))} value={textdesplay} src={slides[index].url}>
+        <ImageContainer
+        onTouchStart={(e)=>handleTouchStart(e)}
+        onTouchMove={(e)=>(handleTouchMove(e))}
+        value={textdesplay}
+        src={slides[index].url}
+        theme={theme.theme}
+        >
         {
             slides.map((slide,slideIndex)=>{
                 if (index!==slideIndex)
