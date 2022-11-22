@@ -4,7 +4,6 @@ import { slides } from "./data";
 import { ContainerHome } from "./ImageSlider.styled";
 import { ImageSlider } from "./ImageSlider";
 import { Welcome } from "./Welcome";
-import { H1Welcome } from "./Welcome.styled";
 import { Education } from "./Education";
 
 const  Home=()=>{
@@ -12,7 +11,7 @@ const  Home=()=>{
     return(
         <ContainerHome>
         <Welcome />
-        <ImageSlider id="content2" slides ={slides} />
+        <ImageSlider slides ={slides} />
         <Education />
         </ContainerHome>
     );

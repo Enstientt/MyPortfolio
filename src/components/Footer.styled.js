@@ -31,3 +31,14 @@ transition: 0.8s ease;
     margin:0;
 }
 `
+
+
+export const LinksContainer=styled.div`
+margin-top:3px;
+display:flex;
+width:100%;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:center;
+column-gap:20px;
+`

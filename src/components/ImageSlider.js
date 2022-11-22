@@ -1,15 +1,15 @@
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "./data";
 
-import { ImageContainer, Arrow, ArrowRight, DoteCont, Dote, TextContainer, Title, Text, SlidCon} from "./ImageSlider.styled";
+import { ImageContainer, Arrow, ArrowRight, DoteCont, Dote, TextContainer, Title, Text, SlidCon, UltimateContainer} from "./ImageSlider.styled";
 import { H1Welcome } from "./Welcome.styled";
 
 export const ImageSlider=({slides})=>{
     const [index, setIndex] = useState(0);
     const [textdesplay, setTextdesplay] = useState(false);
-    const theme = useContext(ThemeContext);
     const [touchPosition, setTouchPosition] = useState(null);
-
+    const theme = useContext(ThemeContext);
+/* phone touch screen  slide  feature using */
     const handleTouchStart = (e) => {
         const touchDown = e.touches[0].clientX
         setTouchPosition(touchDown)
@@ -34,6 +34,7 @@ export const ImageSlider=({slides})=>{
     
         setTouchPosition(null)
     }
+    /* desktop   slide  feature */
     const goToPrevious=()=>{
         const firstIndex = index === 0;
         const newIndex = firstIndex?slides.length - 1:index-1;
@@ -47,11 +48,12 @@ export const ImageSlider=({slides})=>{
     const goToSlide=(slideIndex)=>{
         setIndex(slideIndex);
     }
+    /* desplaying the project description*/
     const onHover = ()=>{
         setTextdesplay(!textdesplay);
     }
     return(
-        <div style={{width:"100%", display:"flex",flexFlow:"row wrap", justifyContent:"center",overflow:"hidden"}} >
+        <UltimateContainer>
         <H1Welcome theme = {theme.theme} style={{fontSize:"45px", width:"100%", textAlign:"center",borderBottom:"1px solid "+theme.theme.text,display:"flex", justifyContent:"center"}}>Projects</H1Welcome>
         <SlidCon>
         <Arrow onClick={goToPrevious} text={textdesplay} value={theme.theme}/>
@@ -92,6 +94,6 @@ export const ImageSlider=({slides})=>{
                         )
                     })}
                     </DoteCont>
-                    </div>
+                    </UltimateContainer>
             );
         }

@@ -13,32 +13,25 @@ row-gap: 10px;
 background-image: url(${props=>props.src});
 background-size: cover;
 background-position: center;
-${props=>(props.value && props.theme.text==='white')?'background:rgba(0,0,0,1);':(props.value && props.theme.body==='white')?'background:rgba(255,255,255,1)':1};
+${props=>(props.value && props.theme.text==='white')?
+        'background:rgba(0,0,0,1);':
+        (props.value && props.theme.body==='white')?
+        'background:rgba(255,255,255,1)':1};
 overflow: hidden;
 @media screen and (max-width :500px ) {
     width: 100vw;
     height: 30vh;
-    row-gap: 0px;
 }
 `;
-export const SlideContainer = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-margin:0 auto;
-border-top: 0.1px solid ${props=>props.value.text==='white'?'grey':'grey'};
-@media screen and (max-width :500px ) {
-    width: 100%;
-    height: 100%;
-}
-
-`
 export const Arrow = styled(VscChevronLeft)`
 font-size: 45px;
 align-self: flex-start;
 position: absolute;
 color: ${props=>props.value.text};
 cursor: pointer;
+:hover{
+    transform: scale(1.2);
+}
 @media screen and (max-width :500px ) {
     display: none;
 }
@@ -49,6 +42,9 @@ color: ${props=>props.value.text};
 align-self: flex-end;
 position: absolute;
 cursor: pointer;
+:hover{
+    transform: scale(1.2);
+}
 @media screen and (max-width :500px ) {
     display: none;
 }
@@ -70,15 +66,7 @@ height: 10px;
 width: 10px;
 border: 1px solid ${(props)=> props.value.text} ;
 background-color: ${props=>props.index?"grey":"transparent"};
-
 cursor: pointer;
- `
-
- export const Slidediv = styled.div`
- height:fit-content;
- width: 100%;
- opacity: 0;
- transition: 1s ease;
  `
 export const TextContainer = styled.div`
 width: 80%;
@@ -133,4 +121,11 @@ flex-direction:column;
 flex-wrap:wrap;
 align-items:center;
 justify-content:center;
+`
+export const UltimateContainer=styled.div`
+width:100%;
+display:flex;
+flex-flow:row wrap;
+justify-content:center;
+overflow:hidden;
 `

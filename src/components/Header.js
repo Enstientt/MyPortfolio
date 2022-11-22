@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "./data";
-import { Button, ButtonSwitch, ButtonSwitchLight, HeaderD, HeaderM, MainHeader } from "./Header.styled";
+import { Button, ButtonSwitch, ButtonSwitchLight, HeaderD, MainHeader } from "./Header.styled";
 
 export const Header=(props)=>{
     const theme = useContext(ThemeContext);
@@ -14,10 +14,7 @@ export const Header=(props)=>{
                 <Button value={theme.theme} to="MyPortfolio/MyIntranet"><b>Profil</b></Button>
                 <ButtonSwitch value={theme.theme} onClick={()=>theme.switchTheme()}/>
                 <ButtonSwitchLight value={theme.theme} onClick={()=>theme.switchTheme()}/>
-
             </HeaderD>
-            <HeaderM>
-            </HeaderM>
         </MainHeader>
     );
 }

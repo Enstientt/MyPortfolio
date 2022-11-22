@@ -18,20 +18,10 @@ max-width:800px;
 height: fit-content;
 display: flex;
 justify-content: space-around;
-//border:1px solid white;
 z-index: 9;
 `;
 export const HeaderD = styled.div`
 display: flex;
-//display: ${props=>props.display==='Des'?'nothing':'none;'};
-`
-export const HeaderM = styled.div`
-position: sticky;
-display: ${props=>props.display==='Mob'?'none':'none;'};
-top:0;
-@media screen and (max-width :500px) {
-    width: 100vw;
-}
 `
 export const Button = styled(Link)`
 width: fit-content;
@@ -48,9 +38,6 @@ text-decoration: none;
     background:${props=>props.value.gradient};
     border-radius: 10%;
     color: #000;
-}
-@media screen and (max-width :800px) {
-
 }
 ` 
 export const Intra = styled.div`
