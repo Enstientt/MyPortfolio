@@ -1,10 +1,21 @@
 {
   "files": {
-    "main.js": "/MyPortfolio/static/js/main.cc23abde.js",
+    "main.js": "/MyPortfolio/static/js/main.587d1083.js",
+    "static/media/safety-react.png": "/MyPortfolio/static/media/safety-react.48e8fcbe9c609d7a17a4.png",
+    "static/media/fractol.jpg": "/MyPortfolio/static/media/fractol.87a5f2c21bb0fed30c5e.jpg",
+    "static/media/133.jpg": "/MyPortfolio/static/media/133.4575baef3d8d71b31fab.jpg",
+    "static/media/Insea.jpg": "/MyPortfolio/static/media/Insea.39044b10512c6db06b80.jpg",
+    "static/media/intra.png": "/MyPortfolio/static/media/intra.a080bbc3ac742c14cde1.png",
+    "static/media/me.jpeg": "/MyPortfolio/static/media/me.8ace94749b2e20947ba5.jpeg",
+    "static/media/push_swap.jpg": "/MyPortfolio/static/media/push_swap.3234bbd61334609a4fa9.jpg",
+    "static/media/minitalk.webp": "/MyPortfolio/static/media/minitalk.138ea9d03c59f2df46a5.webp",
+    "static/media/Cpge.webp": "/MyPortfolio/static/media/Cpge.3b3a0b4e58c15188bec5.webp",
+    "static/media/philosophers.png": "/MyPortfolio/static/media/philosophers.a90ccf6e43aa519b6cfd.png",
+    "static/media/calReact.png": "/MyPortfolio/static/media/calReact.c117b5d39193494e8b71.png",
     "index.html": "/MyPortfolio/index.html",
-    "main.cc23abde.js.map": "/MyPortfolio/static/js/main.cc23abde.js.map"
+    "main.587d1083.js.map": "/MyPortfolio/static/js/main.587d1083.js.map"
   },
   "entrypoints": [
-    "static/js/main.cc23abde.js"
+    "static/js/main.587d1083.js"
   ]
 }
