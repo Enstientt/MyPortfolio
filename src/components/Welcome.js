@@ -10,7 +10,9 @@ export const Welcome =()=>{
         <MyImage src={me} />
         <WelcomeText >
             <H1Welcome theme={theme.theme}><b>👋I’m Zakariae Essadqui</b></H1Welcome>
-            <PWelcome theme={theme.theme}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is simply dummy text of the printing and typesetting</PWelcome>
+            <PWelcome theme={theme.theme}>Javascript developer with a passion for front-end development using reactJS, currently studying at
+            1337 a major school to become a senior programmer. I am aspiring to boost my skills and learn new
+            ones.</PWelcome>
         </WelcomeText>
         </WelcomeContainer>
     );

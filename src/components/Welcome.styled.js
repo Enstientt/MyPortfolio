@@ -7,7 +7,7 @@ display: flex;
 flex-direction: row;
 box-sizing:border-box; ;
 column-gap: 1rem;
-@media screen and (max-width :500px ) {
+@media screen and (max-width :760px ) {
     flex-direction: column;
 }
 `;
