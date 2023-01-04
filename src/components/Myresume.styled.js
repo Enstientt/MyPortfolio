@@ -7,6 +7,7 @@ border: none;
 outline: none;
 color: #fff;
 background: #111;
+ user-select: none;
 cursor: pointer;
 position: relative;
 z-index: 0;
