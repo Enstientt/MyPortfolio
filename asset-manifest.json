@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/MyPortfolio/static/js/main.1146fbb7.js",
+    "main.js": "/MyPortfolio/static/js/main.6c458805.js",
     "static/media/safety-react.png": "/MyPortfolio/static/media/safety-react.48e8fcbe9c609d7a17a4.png",
     "static/media/fractol.jpg": "/MyPortfolio/static/media/fractol.87a5f2c21bb0fed30c5e.jpg",
     "static/media/133.jpg": "/MyPortfolio/static/media/133.4575baef3d8d71b31fab.jpg",
@@ -13,9 +13,9 @@
     "static/media/philosophers.png": "/MyPortfolio/static/media/philosophers.a90ccf6e43aa519b6cfd.png",
     "static/media/calReact.png": "/MyPortfolio/static/media/calReact.c117b5d39193494e8b71.png",
     "index.html": "/MyPortfolio/index.html",
-    "main.1146fbb7.js.map": "/MyPortfolio/static/js/main.1146fbb7.js.map"
+    "main.6c458805.js.map": "/MyPortfolio/static/js/main.6c458805.js.map"
   },
   "entrypoints": [
-    "static/js/main.1146fbb7.js"
+    "static/js/main.6c458805.js"
   ]
 }
