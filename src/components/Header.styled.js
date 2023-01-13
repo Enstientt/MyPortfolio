@@ -8,6 +8,7 @@ export const Global = createGlobalStyle`
 body{
     background : ${props=>props.value.background};
     color:${props=>props.value.background};
+    transition:background 1s ease;
     max-width: 1400px;
     font-family: "Cera Round Pro", sans-serif;
 }
@@ -31,6 +32,7 @@ padding: 10px;
 font-size: small;
 color: ${props=>props.value.text};
 background-color:${props=>props.value.background};
+transition:background-color 1s ease;
 text-decoration: none;
 :hover{
     transition: all 0.4s ease-in-out;

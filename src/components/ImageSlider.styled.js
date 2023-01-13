@@ -9,6 +9,7 @@ flex-flow: column wrap;
 justify-content: center;
 align-items: center;
 border-radius: 5%;
+transition: all 0.5s ease-in-out;
 row-gap: 10px;
 background-image: url(${props=>props.src});
 background-size: cover;
