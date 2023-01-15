@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import React, { useContext } from "react";
+import { ThemeContext } from "./data"; 
 
 export const RedirectButton = styled.button`
 width: 220px;
@@ -54,3 +56,64 @@ border-radius: 10px;
     100% { background-position: 0 0; }
 }
 `
+
+const Header = styled.header`
+  text-align: center;
+  padding: 20px;
+  color: ${() => {
+   const theme = useContext(ThemeContext);
+    return theme.theme.text;
+  }};
+`;
+
+const Section = styled.section`
+  padding: 20px;
+  color: ${() => {
+     const theme = useContext(ThemeContext);
+    return theme.theme.text;
+  }};
+`;
+
+const H2 = styled.h2`
+  margin-bottom: 20px;
+  color: ${() => {
+      const theme = useContext(ThemeContext);
+    return theme.theme.text;
+  }};
+`;
+
+const UL = styled.ul`
+  list-style: none;
+  color: ${() => {
+     const theme = useContext(ThemeContext);
+    return theme.theme.text;
+  }};
+`;
+
+const LI = styled.li`
+  margin-bottom: 10px;
+  color: ${() => {
+    const theme = useContext(ThemeContext);
+    return theme.theme.text;
+  }};
+`;
+
+const H3 = styled.h3`
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: ${() => {
+     const theme = useContext(ThemeContext);
+    return theme.theme.text;
+  }};
+`;
+
+const P = styled.p`
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: ${() => {
+    const theme = useContext(ThemeContext);
+    return theme.theme.text;
+  }};
+`;
+
+export {Header, Section, H2, UL, LI, H3, P};
