@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import {Header, Section, H2, UL, LI, H3, P, RedirectButton} from './Myresume.styled.js'
+import resume from '../assets/resume.pdf'
 
 export const MyResume = () => {
   return (
@@ -58,7 +59,7 @@ export const MyResume = () => {
           </LI>
         </UL>
       </Section>
-      <a href="https://myresume.tiiny.site/" target="_blank"><RedirectButton>Download</RedirectButton></a>
+      <a href={resume} download="zakariae-resume"><RedirectButton>Download</RedirectButton></a>
     </div>
   );
 };
