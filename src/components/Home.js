@@ -7,7 +7,6 @@ import { Welcome } from "./Welcome";
 import { Education } from "./Education";
 
 const  Home=()=>{
-    const theme = useContext(ThemeContext);
     return(
         <ContainerHome>
         <Welcome />

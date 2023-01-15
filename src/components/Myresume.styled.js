@@ -58,20 +58,36 @@ border-radius: 10px;
 `
 
 const Header = styled.header`
+  width: 100%;
+align-self: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
   text-align: center;
   padding: 20px;
   color: ${() => {
    const theme = useContext(ThemeContext);
     return theme.theme.text;
   }};
+
 `;
 
 const Section = styled.section`
   padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: ${() => {
      const theme = useContext(ThemeContext);
     return theme.theme.text;
   }};
+  @media screen and (max-width :500px ) {
+    text-align: center;
+}
 `;
 
 const H2 = styled.h2`
@@ -96,6 +112,9 @@ const LI = styled.li`
     const theme = useContext(ThemeContext);
     return theme.theme.text;
   }};
+  @media screen and (max-width :500px ) {
+    text-align: center;
+}
 `;
 
 const H3 = styled.h3`
@@ -105,6 +124,9 @@ const H3 = styled.h3`
      const theme = useContext(ThemeContext);
     return theme.theme.text;
   }};
+  @media screen and (max-width :500px ) {
+    text-align: center;
+}
 `;
 
 const P = styled.p`
