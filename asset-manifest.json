@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/MyPortfolio/static/js/main.3212a0d4.js",
+    "main.js": "/MyPortfolio/static/js/main.81b59ef4.js",
     "static/media/safety-react.png": "/MyPortfolio/static/media/safety-react.48e8fcbe9c609d7a17a4.png",
     "static/media/fractol.jpg": "/MyPortfolio/static/media/fractol.87a5f2c21bb0fed30c5e.jpg",
     "static/media/133.jpg": "/MyPortfolio/static/media/133.4575baef3d8d71b31fab.jpg",
@@ -10,12 +10,13 @@
     "static/media/push_swap.jpg": "/MyPortfolio/static/media/push_swap.3234bbd61334609a4fa9.jpg",
     "static/media/minitalk.webp": "/MyPortfolio/static/media/minitalk.138ea9d03c59f2df46a5.webp",
     "static/media/Cpge.webp": "/MyPortfolio/static/media/Cpge.3b3a0b4e58c15188bec5.webp",
+    "static/media/resume.pdf": "/MyPortfolio/static/media/resume.485bc78862923d8e1da7.pdf",
     "static/media/philosophers.png": "/MyPortfolio/static/media/philosophers.a90ccf6e43aa519b6cfd.png",
     "static/media/calReact.png": "/MyPortfolio/static/media/calReact.c117b5d39193494e8b71.png",
     "index.html": "/MyPortfolio/index.html",
-    "main.3212a0d4.js.map": "/MyPortfolio/static/js/main.3212a0d4.js.map"
+    "main.81b59ef4.js.map": "/MyPortfolio/static/js/main.81b59ef4.js.map"
   },
   "entrypoints": [
-    "static/js/main.3212a0d4.js"
+    "static/js/main.81b59ef4.js"
   ]
 }
