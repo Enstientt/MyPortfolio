@@ -47,6 +47,6 @@ export const ThemeContext = React.createContext(themes.darkTheme);
 
 export const parcour=[
   {url:cpge, parcoure:"2015-2017: I started my journey at the Higher School Preparatory Classes :two years of  intensive courses on math, physics and engineering science ",desc:"https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#:~:text=The%20classes%20pr%C3%A9paratoires%20aux%20grandes,French%20post%2Dsecondary%20education%20system.",name:"CPGE"},
-  {url:insea, parcoure:"2017-2020 : I began my career as a statistical student enginner at The National Institute of Statistics and Applied Economics (INSEA)",desc:"https://en.wikipedia.org/wiki/National_Institute_of_Statistics_and_Applied_Economics",name:"INSEA"},
+  {url:insea, parcoure:"2017-2020 : I began my career as a Statistical Engineering student at The National Institute of Statistics and Applied Economics (INSEA)",desc:"https://en.wikipedia.org/wiki/National_Institute_of_Statistics_and_Applied_Economics",name:"INSEA"},
   {url:leet, parcoure:"2021-until now: I started an exciting journey at 1337 IT school (42 network) for mor3 info about the school check the link below",desc:"https://1337.ma/en/",name:"1337"}
 ]
