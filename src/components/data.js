@@ -40,8 +40,6 @@ export const ThemeContext = React.createContext(themes.darkTheme);
 {url:minitalk,name:"Mini-talk",description:"The project main goal was to creat a server and client process for data transmission"
 },
 {url:philo,name:"Philosophers",description:"creating a programe on c that  solve the dining philosophers problem (multitasking and synchronistaion issue in Unix)"
-},
-{url:calculator,name:"react_calculator",description:"calculator App built using ReactJs library , the first step toward learning the basics of react"
 }
 ]
 
